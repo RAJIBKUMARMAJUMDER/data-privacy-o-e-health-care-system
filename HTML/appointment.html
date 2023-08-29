@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.jpg" sizes="32x32" type="image/jpeg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: white;
+        }
+
+        .container {
+            position: absolute;
+            max-width: 800px;
+            height: 500px;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .myRightCtn {
+            position: relative;
+            background-image: linear-gradient(45deg, #f046ff, #9b00e8);
+            border-radius: 25px;
+            height: 100%;
+            padding: 25px;
+            color: rgb(192, 192, 192);
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .myLeftCtn {
+            position: relative;
+            background: #fff;
+            border-radius: 25px;
+            height: 100%;
+            padding: 25px;
+            padding-left: 50px;
+        }
+
+        .myLeftCtn header {
+            color: blueviolet;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            height: 100%;
+        }
+
+        .myCard {
+            position: relative;
+            background: #fff;
+            height: 100%;
+            border-radius: 25px;
+            -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+        }
+
+        .myRightCtn header {
+            color: #fff;
+            font-size: 44px;
+
+        }
+
+        .box {
+            position: relative;
+            margin: 20px;
+            margin-bottom: 100px;
+        }
+
+        .myLeftCtn .myInput {
+            width: 300px;
+            border-radius: 230px;
+            border-radius: 25px;
+            padding: 10px;
+            padding-left: 50px;
+            background-color: white;
+            text-align: start;
+            border: none;
+            -webkit-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+            -moz-box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+        }
+
+        .myLeftCtn .btn:hover {
+            background: linear-gradient(45deg, #c85bff, #b726ff);
+        }
+
+        .butt_out:hover {
+            border: 2px solid#eecbff;
+        }
+
+        .btn {
+
+            color: white;
+            background: deeppink;
+            padding: 8px 12px;
+            font-size: 20px;
+            border: 2px solid white;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            height: 56px;
+        }
+
+        header .navbar #navbarSupportedContent ul .dropdown button {
+            background-color: #dc3545 !important;
+            border: 0;
+            font-size: 1rem;
+        }
+        
+        .mx-2 button {
+            background-color: #212529;
+            border-color: #212529;
+            border-radius: 5px;
+            font-size:1rem;
+        }
+    </style>
+
+    <title>Appoinment</title>
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white link-secondary" href="#">e-Healthcare</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link  text-white link-warning" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white link-info" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active text-white link-success" aria-current="page"
+                                href="#">Appiontment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white link-warning" href="/contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-danger dropdown-toggle " type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login
+                            </button>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="EmployeeLogin.html">Admin Login</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="EmployeeLogin.html">Doctor's Login</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="EmployeeLogin.html">Nurse's action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="EmployeeLogin.html">Pharmacist Login</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="userLogin.html">Patient's Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="mx-2">
+                        <a href="sign_up.html" class="nav-item"><button class="btn btn-dark">Sign Up</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-md justify-content-center my-4">
+        <div class="Card">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="myLeftCtn shadow">
+                        <form class="myForm text-center">
+                            <header>Book Appoinment</header>
+                            <div class="form-group">
+                                <i class="fas fa-user"></i>
+                                <input class="myInput" type="text" placeholder="Name" id="username" required>
+
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" type="number" placeholder="Age" id="age" required>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <select class="myInput" name="gender" id="gender" class="form-select"
+                                    aria-label="Default select example" required>
+                                    <option value="">--Select a Gender--</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" type="text" placeholder="Address" id="address" required>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" type="text" placeholder="Contact No." id="contact no" required>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" type="date" placeholder="Prefered Date" id="appointment date"
+                                    required>
+                            </div>
+
+                            <br>
+
+                            <div class="form-group">
+                                <i class="fas fa-envelope"></i>
+                                <input class="myInput" type="text" placeholder="Problem Description" id="problem"
+                                    required>
+                            </div>
+
+                            <br>
+
+                            <input type="submit" class="btn" value="Book Appoinment">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="myRightCtn">
+                        <div class="box">
+                            <header>Hi Sir/Ma'am</header>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt omnis eius pariatur ullam
+                                inventore cumque, laborum dolore delectus officiis quo reprehenderit labore? Rerum
+                                reiciendis vitae optio, ipsum tenetur ab assumenda?</p>
+                            <input type="button" class="butt_out" value="Learn More" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="com-md-2"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
